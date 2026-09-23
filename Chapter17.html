@@ -241,8 +241,16 @@
                 options: ['RSN', 'SAE', 'EAP', 'PAP', 'CHAP'],
                 correctAnswers: ['EAP'],
                 explanation: 'The supplicant, authenticator, and authentication server work together to provide the framework for 802.1X port-based access control, and an authentication protocol is needed to assist in the authentication process. The Extensible Authentication Protocol (EAP) is used to provide user or device authentication.'
+            },
+            {
+                id: 21,
+                type: 'single',
+                question: 'Which technology is commonly used to authenticate wireless clients at the network access layer in enterprise deployments?',
+                options: ['ARP spoofing protection', 'DNSSEC', 'EAP (Extensible Authentication Protocol) with RADIUS', 'Static IP authentication'],
+                correctAnswers: ['EAP (Extensible Authentication Protocol) with RADIUS'],
+                explanation: 'Enterprise wireless deployments commonly use 802.1X with EAP and a RADIUS server for centralized authentication and authorization. This allows each client to present credentials and receive access based on policy.'
             }
-                ];
+        ];
 
         // Pagination State
         let currentPage = 0;
